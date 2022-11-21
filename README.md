@@ -25,12 +25,38 @@ Request body of message
 	    "content": "So many youtube vloggers are posting video on cooking these days"
 	}
 
-### Setup and run this Reactive Springboot application
-The following steps to setup:
+### Setup and run this Reactive Springboot application with Docker
+Following are the steps to setup and run the complete application if you have docker installed:
 
-* Set the environment variable 
+* Clone repository to local machine
+	
+* Set the below environment variable to provide forbidden words of your choice (you can also skip this step as there are few default forbidden words available in api)
 	- message.forbidden.words and provide some comma separated words as value to this which will be used as forbidden words to validate content of message
 		- for example, message.forbidden.words=password,secret
+
+* Open command prompt in root directory (reactive-rest-message-service) of application and run below maven command
+	- mvn clean install
+
+* Run following command in same command prompt window to create docker image:
+	- docker build --tag=reactive-rest-message-service:latest .
+
+* Run following command to start zookeeper, kafka and springboot rest api via docker-compose.yml	
+	- docker-compose up -d
+	
+* Import postman collection to Postman and hit endpoints
+
+### Setup and run this Reactive Springboot application without Docker
+
+* Download and install Apache Kafka to your local machine, run zookeeper and kafka server
+
+* Clone repository to local machine
+
+* Import the code to any IDE 
+
+* Update kafka server config in application.properties
+	- spring.kafka.bootstrap-servers=localhost:9092
+
+* Import postman collection to Postman and hit endpoints
 
 ### Limitations
 
