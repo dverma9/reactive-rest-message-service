@@ -1,0 +1,14 @@
+INSERT INTO message (user_id, topic, content, created) VALUES ('dverma', 'Healthcare', 'Healthcare is very essential these days', '2022-11-19T18:15:44.923163');
+INSERT INTO message (user_id, topic, content, created) VALUES ('usaxena', 'Technology', 'Technology is future', '2022-11-19T18:15:44.923163');
+INSERT INTO message (user_id, topic, content, created) VALUES ('mali', 'Education', 'Everybody has right of Education', '2022-11-19T18:15:44.923163');
+INSERT INTO message (user_id, topic, content, created) VALUES ('rsharma', 'Telecom', 'Telecom industry is evolving rapidly', '2022-11-19T18:15:44.923163');
+INSERT INTO message (user_id, topic, content, created) VALUES ('mparupalli', 'Media', 'Media is very powerful these days and can easily influence crowd.', '2022-11-19T18:15:44.923163');
+INSERT INTO message (user_id, topic, content, created) VALUES ('dverma', 'Healthcare', 'Healthcare is an important domain', '2022-11-19T18:15:44.923163');
+INSERT INTO message (user_id, topic, content, created) VALUES ('usaxena', 'Technology', 'IT industry is experiencing boom', '2022-11-19T18:15:44.923163');
+INSERT INTO message (user_id, topic, content, created) VALUES ('mali', 'Education', 'Education helps to live better life', '2022-11-19T18:15:44.923163');
+INSERT INTO message (user_id, topic, content, created) VALUES ('rsharma', 'Telecom', 'We are now 5g and soon we will go beyond this', '2022-11-19T18:15:44.923163');
+INSERT INTO message (user_id, topic, content, created) VALUES ('mparupalli', 'Media', 'Media can not be trusted always', '2022-11-19T18:15:44.923163');
+INSERT INTO message (user_id, topic, content, created) VALUES ('dverma', 'Technology', 'Technology is future', '2022-11-19T18:15:44.923163');
+INSERT INTO message (user_id, topic, content, created) VALUES ('dverma', 'Education', 'Everybody has right of Education', '2022-11-19T18:15:44.923163');
+INSERT INTO message (user_id, topic, content, created) VALUES ('dverma', 'Telecom', 'Telecom industry is evolving rapidly', '2022-11-19T18:15:44.923163');
+INSERT INTO message (user_id, topic, content, created) VALUES ('dverma', 'Media', 'Media is very powerful these days and can easily influence crowd.', '2022-11-19T18:15:44.923163');

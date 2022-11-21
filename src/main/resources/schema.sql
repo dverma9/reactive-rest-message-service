@@ -1,0 +1,1 @@
+create table message (id SERIAL PRIMARY KEY, user_id VARCHAR (20) NOT NULL, topic VARCHAR (20) NOT NULL, content VARCHAR (90) NOT NULL, created TIMESTAMP);
