@@ -58,6 +58,16 @@ Following are the steps to setup and run the complete application if you have do
 
 * Import postman collection to Postman and hit endpoints
 
+### Authentication via Spring security
+
+* Following users are configured to access this api endpoints 
+	- dverma, rsharma, mali, usaxena, mparupalli
+
+* Password is same for all the users
+	- password
+	
+* Use above credentials in Postman, Authorization tab -> Basic Auth -> Username & Password, to post messages from different userIds		
+
 ### Limitations
 
 * H2 DB has been used instead of Mongo due to system limitation to run all containers (reactive api, kafka, db, docker) and other development tools together
