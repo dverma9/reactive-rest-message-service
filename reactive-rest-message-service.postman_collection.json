@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "61368db2-383c-41e8-8198-52e7de28f363",
+		"name": "reactive-rest-message-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21739773"
+	},
+	"item": [
+		{
+			"name": "getMessage",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "dverma",
+						"password": "password"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/stream+json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/stream+json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:9091/api/v1/message/1"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteMessage",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "dverma",
+						"password": "password"
+					}
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/stream+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/stream+json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:9091/api/v1/message/1"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllMessages",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "rsharma",
+						"password": "password"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/stream+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/stream+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9091/api/v1/messages/0/15?topic=Healthcare&userId=dverma",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"api",
+						"v1",
+						"messages",
+						"0",
+						"15"
+					],
+					"query": [
+						{
+							"key": "topic",
+							"value": "Healthcare"
+						},
+						{
+							"key": "userId",
+							"value": "dverma"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postMessage",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true,
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "dverma",
+						"password": "password"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/stream+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/stream+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"topic\": \"Cooking\",\r\n    \"content\": \"So many youtube vloggers are posting video on cooking these days\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9091/api/v1/message"
+			},
+			"response": []
+		}
+	]
+}
