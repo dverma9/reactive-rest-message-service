@@ -41,7 +41,7 @@ public class GlobalExceptionHandler {
 				.code(HttpStatus.NOT_FOUND.value())
 				.message(ex.getMessage())
 				.time(LocalDateTime.now())
-				.build(), HttpStatus.NOT_FOUND);
+				.build(), HttpStatus.OK);
 	}
 
 	@ExceptionHandler(Exception.class)

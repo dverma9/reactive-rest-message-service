@@ -27,7 +27,7 @@ public class ConsumerServiceImpl implements CommandLineRunner {
         this.reactiveMessageRepository = reactiveMessageRepository;
     }
     
-    @Value("${message.forbidden.words}")
+    @Value("${message.forbidden.words:password,secret}")
     private String forbiddenWords;
 
     private Flux<Message> consumeMessage() {
